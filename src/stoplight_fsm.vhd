@@ -1,5 +1,4 @@
---+----------------------------------------------------------------------------
---| 
+--+------------------------------------------------------------------------------
 --| COPYRIGHT 2018 United States Air Force Academy All rights reserved.
 --| 
 --| United States Air Force Academy     __  _______ ___    _________ 
@@ -73,7 +72,7 @@ architecture stoplight_fsm_arch of stoplight_fsm is
 	
 	-- create register signals with default state yellow (10)
     signal f_Q : std_logic_vector(1 downto 0) :="10";
-    signal f_Q_next : std_logic_vector(1 downto 0) :="10";
+    signal f_Q_next : std_logic_vector(1 downto 0);
 begin
 	-- CONCURRENT STATEMENTS ----------------------------
 	-- Next state logic
